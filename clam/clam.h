@@ -6,5 +6,7 @@
 #include "vec2i.h"
 
 #include "vec3.h"
+#include "vec3d.h"
+#include "vec3i.h"
 
 #endif
