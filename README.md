@@ -1,2 +1,8 @@
 # clam
-clam is a Linear Algebra library written in C
+
+## clam is a C Linear Algebra library
+
+***
+
+## Known bugs
+Currently none.
