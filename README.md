@@ -4,5 +4,9 @@
 
 ***
 
+![](res/logo.jpg)
+
+***
+
 ## Known bugs
 Currently none.
