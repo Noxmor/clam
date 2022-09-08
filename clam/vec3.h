@@ -10,6 +10,8 @@ typedef struct
 	float z;
 } vec3;
 
+typedef vec3 vec3f;
+
 void vec3_add(vec3* a, vec3* b, vec3* dest)
 {
 	dest->x = a->x + b->x;

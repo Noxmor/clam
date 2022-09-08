@@ -9,6 +9,8 @@ typedef struct
 	float y;
 } vec2;
 
+typedef vec2 vecf;
+
 void vec2_add(vec2* a, vec2* b, vec2* dest)
 {
 	dest->x = a->x + b->x;
