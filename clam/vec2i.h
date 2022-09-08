@@ -17,20 +17,20 @@ void vec2i_add(vec2i* a, vec2i* b, vec2i* dest)
 
 void vec2i_sub(vec2i* a, vec2i* b, vec2i* dest)
 {
-	dest->x = a->x + b->x;
-	dest->y = a->y + b->y;
+	dest->x = a->x - b->x;
+	dest->y = a->y - b->y;
 }
 
 void vec2i_mul(vec2i* a, vec2i* b, vec2i* dest)
 {
-	dest->x = a->x + b->x;
-	dest->y = a->y + b->y;
+	dest->x = a->x * b->x;
+	dest->y = a->y * b->y;
 }
 
 void vec2i_div(vec2i* a, vec2i* b, vec2i* dest)
 {
-	dest->x = a->x + b->x;
-	dest->y = a->y + b->y;
+	dest->x = a->x / b->x;
+	dest->y = a->y / b->y;
 }
 
 void vec2i_scalar(vec2i* v, int scalar)
