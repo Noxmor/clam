@@ -63,4 +63,15 @@ int vec3i_dot(vec3i* a, vec3i* b)
 	return a->x * b->x + a->y + b->y + a->z * b->z;
 }
 
+vec3i vec3i_cross(vec3i* a, vec3i* b)
+{
+	vec3i cross;
+
+	cross.x = a->y * b->z - a->z * b->y;
+	cross.y = a->z * b->x - a->x * b->z;
+	cross.z = a->x * b->y - a->y * b->x;
+
+	return cross;
+}
+
 #endif

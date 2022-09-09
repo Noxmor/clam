@@ -63,4 +63,15 @@ double vec3d_dot(vec3d* a, vec3d* b)
 	return a->x * b->x + a->y + b->y + a->z * b->z;
 }
 
+vec3d vec3d_cross(vec3d* a, vec3d* b)
+{
+	vec3d cross;
+
+	cross.x = a->y * b->z - a->z * b->y;
+	cross.y = a->z * b->x - a->x * b->z;
+	cross.z = a->x * b->y - a->y * b->x;
+
+	return cross;
+}
+
 #endif
