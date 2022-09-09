@@ -9,4 +9,8 @@
 #include "vec3d.h"
 #include "vec3i.h"
 
+#include "vec4.h"
+#include "vec4d.h"
+#include "vec4i.h"
+
 #endif
