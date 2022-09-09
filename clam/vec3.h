@@ -5,9 +5,23 @@
 
 typedef struct
 {
-	float x;
-	float y;
-	float z;
+	union
+	{
+		float x;
+		float r;
+	};
+	
+	union
+	{
+		float y;
+		float g;
+	};
+
+	union
+	{
+		float z;
+		float b;
+	};
 } vec3;
 
 typedef vec3 vec3f;

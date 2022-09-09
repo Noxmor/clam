@@ -3,10 +3,29 @@
 
 typedef struct
 {
-	double x;
-	double y;
-	double z;
-	double w;
+	union
+	{
+		double x;
+		double r;
+	};
+
+	union
+	{
+		double y;
+		double g;
+	};
+
+	union
+	{
+		double z;
+		double b;
+	};
+
+	union
+	{
+		double w;
+		double a;
+	};
 } vec4d;
 
 void vec4d_add(vec4d* a, vec4d* b, vec4d* dest)

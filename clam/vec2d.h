@@ -5,8 +5,17 @@
 
 typedef struct
 {
-	double x;
-	double y;
+	union
+	{
+		double x;
+		double r;
+	};
+
+	union
+	{
+		double y;
+		double g;
+	};
 } vec2d;
 
 void vec2d_add(vec2d* a, vec2d* b, vec2d* dest)

@@ -5,8 +5,17 @@
 
 typedef struct
 {
-	float x;
-	float y;
+	union
+	{
+		float x;
+		float r;
+	};
+	
+	union
+	{
+		float y;
+		float g;
+	};
 } vec2;
 
 typedef vec2 vecf;

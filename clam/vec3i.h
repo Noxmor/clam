@@ -5,9 +5,23 @@
 
 typedef struct
 {
-	int x;
-	int y;
-	int z;
+	union
+	{
+		int x;
+		int r;
+	};
+
+	union
+	{
+		int y;
+		int g;
+	};
+
+	union
+	{
+		int z;
+		int b;
+	};
 } vec3i;
 
 void vec3i_add(vec3i* a, vec3i* b, vec3i* dest)
